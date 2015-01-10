@@ -13,62 +13,62 @@ public class Student
 	
 	public void setTotalScore(int sco)
 	{
-		total_score = sco;
+		this.total_score = sco;
 	}
 	public int getTotalScore()
 	{
-		return total_score;
+		return this.total_score;
 	}
 	public void setAverageGrade(String grd)
 	{
-		average_grade = grd;
+		this.average_grade = grd;
 	}
 	public String getAverageGrade()
 	{
-		return average_grade;
+		return this.average_grade;
 	}
 	public int getSubjectCount()
 	{
-		return count + 1;
+		return this.count + 1;
 	}
 	
 	public void setName(String na)
 	{
-		name = na;
+		this.name = na;
 	}
 	public String getName()
 	{
-		return name;
+		return this.name;
 	}
 	
 	public String getSelectedSubject(int cnt)
 	{
-		return subject[cnt];
+		return this.subject[cnt];
 	}
 	public int getSelectedScore(int cnt)
 	{
-		return score[cnt];
+		return this.score[cnt];
 	}
 	public void setSelectedGrade(int cnt, String grd)
 	{
-		grade[cnt] = grd;
+		this.grade[cnt] = grd;
 	}
 	public String getSelectedGrade(int cnt)
 	{
-		return grade[cnt];
+		return this.grade[cnt];
 	}
 	
 	public void addSubject(String sub, int sco)
 	{
-		if(count == max)
+		if(this.count == max)
 		{
 			System.out.println("Subject 배열 꽉참");
 		}
 		else
 		{
-			count++;
-			subject[count] = sub;
-			score[count] = sco;
+			this.count++;
+			this.subject[count] = sub;
+			this.score[count] = sco;
 		}
 	}
 }
