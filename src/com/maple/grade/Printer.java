@@ -25,4 +25,9 @@ public class Printer
 		
 		
 	}
+	
+	public void printStudentInfoToFile(Student stu)
+	{
+		
+	}
 }
