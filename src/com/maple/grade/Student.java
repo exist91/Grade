@@ -29,7 +29,7 @@ public class Student
 	}
 	public int getSubjectCount()
 	{
-		return count;
+		return count + 1;
 	}
 	
 	public void setName(String na)

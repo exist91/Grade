@@ -4,7 +4,7 @@ public class Calculator
 {	
 	public void calculateGrade(Student stu)
 	{
-		for(int i = 0; i <= stu.getSubjectCount(); i++)
+		for(int i = 0; i < stu.getSubjectCount(); i++)
 		{
 			stu.setSelectedGrade(i, convertScoreToGrade(stu.getSelectedScore(i)));
 		}
@@ -14,13 +14,13 @@ public class Calculator
 	{
 		int sum = 0;
 		
-		for(int i = 0; i <= stu.getSubjectCount(); i++)
+		for(int i = 0; i < stu.getSubjectCount(); i++)
 		{
 			sum += stu.getSelectedScore(i);
 		}
 		
 		stu.setTotalScore(sum);
-		stu.setAverageGrade( convertScoreToGrade(sum/(stu.getSubjectCount()+1)) );
+		stu.setAverageGrade( convertScoreToGrade(sum/stu.getSubjectCount()) );
 	}
 	
 	private String convertScoreToGrade(int score)
