@@ -7,8 +7,26 @@ public class Student
 	private String name;
 	private String[] subject = new String[max];
 	private int[] score = new int[max];
-	private char[] grade = new char[max];
+	private String[] grade = new String[max];
+	private int total_score;
+	private String average_grade;
 	
+	public void setTotalScore(int sco)
+	{
+		total_score = sco;
+	}
+	public int getTotalScore()
+	{
+		return total_score;
+	}
+	public void setAverageGrade(String grd)
+	{
+		average_grade = grd;
+	}
+	public String getAverageGrade()
+	{
+		return average_grade;
+	}
 	public int getSubjectCount()
 	{
 		return count;
@@ -31,11 +49,11 @@ public class Student
 	{
 		return score[cnt];
 	}
-	public void setSelectedGrade(int cnt, char grd)
+	public void setSelectedGrade(int cnt, String grd)
 	{
 		grade[cnt] = grd;
 	}
-	public char getSelectedGrade(int cnt)
+	public String getSelectedGrade(int cnt)
 	{
 		return grade[cnt];
 	}
